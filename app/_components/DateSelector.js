@@ -57,6 +57,11 @@ function DateSelector({ settings, cabin, bookedDates }) {
           isPast(curDate) ||
           bookedDates.some((date) => isSameDay(date, curDate))
         }
+        styles={{
+          dropdown: {
+            backgroundColor: "#1B2631"
+          }
+        }}
       />
 
       <div className="flex items-center justify-between px-8 bg-accent-500 text-primary-800 h-[72px]">
